@@ -25,10 +25,12 @@
       const formButton = document.getElementById("formButton");
       const mapValueHere = document.getElementById("mapValueHere");
 
-     // const newDiv = document.createElement("div")
       formButton.addEventListener("click", (e) => {
-        console.log(storeMessagesArray);
-        mapValueHere.innerHTML += inputId.value;
+        <!-- console.log(storeMessagesArray); -->
+        //        mapValueHere.innerHTML += inputId.value;
+        const newDiv = document.createElement("div");
+        newDiv.innerHTML = inputId.value;
+        mapValueHere.appendChild(newDiv);
         event.preventDefault();
       });
     </script>
